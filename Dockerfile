@@ -4,7 +4,7 @@ MAINTAINER CodingCrush
 ENV LANG en_US.UTF-8
 # TimeZone: Asia/Shanghai
 RUN ln -s -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-    curl -fsSL https://setup.ius.io/ | sh && \
+    curl -fsSL https://setup.ius.io | sh && \
     yum update -y && \
     yum install -y python36u python36u-devel python36u-pip && \
     mkdir ~/.pip && \
